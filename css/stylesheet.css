@@ -1,6 +1,7 @@
 
 h1{
     color: blue;
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
     background-color: beige;
@@ -10,6 +11,9 @@ body{
     background-color: lightblue;
     text-align: center;
     
+}
+#index_font{
+    font-family: Montserrat, sans-serif;
 }
 
 /* nav{
