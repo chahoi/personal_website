@@ -1,21 +1,40 @@
 
 body{
     background-color: #EDDDD0;
-    grid-template-columns: 1fr 1fr;
 }
 header{
     background-color: #A6CAD4;
 }
 h1{
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-family: 'Times New Roman', serif;
+    text-align: center;
 }
 
 main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.aboutme{
+    grid-column: 0;
+}
+.portrait{
+    grid-column: 1/2;
+}
+.whatIlove{
 
 }
+
+
+nav {
+    text-align: center;
+}
+
 nav ul{
     list-style-type: none;
+    display: inline-block;
+    /* text-align: center; */
+    margin-bottom: 0;
 }
 
 footer{
@@ -24,7 +43,6 @@ footer{
 
 .navigation{
     background-color: lightblue;
-    text-align: center;
 }
 #index_font{
     font-family: Montserrat, sans-serif;
