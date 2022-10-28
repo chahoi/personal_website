@@ -5,6 +5,18 @@ body{
 header{
     background-color: #A6CAD4;
 }
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+li{
+    padding: 5px;
+}
+
 h1{
     color: black;
     font-family: 'Times New Roman', serif;
@@ -26,24 +38,17 @@ main{
 }
 
 
-nav {
+/* nav {
     text-align: center;
-}
-
-nav ul{
     list-style-type: none;
     display: inline-block;
-    /* text-align: center; */
     margin-bottom: 0;
-}
+} */
 
 footer{
     background-color: #A6CAD4 ;
 }
 
-.navigation{
-    background-color: lightblue;
-}
 #index_font{
     font-family: Montserrat, sans-serif;
 }
