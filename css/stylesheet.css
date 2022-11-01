@@ -33,9 +33,7 @@ main{
 .portrait{
     grid-column: 1/2;
 }
-.whatIlove{
 
-}
 
 
 /* nav {
@@ -54,3 +52,15 @@ footer{
 #index_font{
     font-family: Montserrat, sans-serif;
 }
+
+.myCourseList{
+    list-style-type: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .myCourses{
+        display: flex;
+        
+    }
+}
+
