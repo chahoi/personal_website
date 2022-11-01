@@ -23,7 +23,7 @@ h1{
     text-align: center;
 }
 
-main{
+main.aboutMe{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
@@ -53,14 +53,35 @@ footer{
     font-family: Montserrat, sans-serif;
 }
 
-.myCourseList{
-    list-style-type: none;
+/* .myCourseList{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+} */
+
+.listBorder{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
 }
 
-@media screen and (min-width: 1200px) {
-    .myCourses{
-        display: flex;
-        
-    }
+p.courseOutline{
+    grid-row: 2/3;
+}
+
+.listBorderBottom{
+    border-bottom: black solid 2px;
+}
+
+main article ul{
+ list-style-type: none;
+}
+
+/* main article ul li {
+    text-align: right;
+} */
+
+@media screen and (min-width: 600px) {
+    
 }
 
