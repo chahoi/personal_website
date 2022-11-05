@@ -52,37 +52,33 @@ footer{
 #index_font{
     font-family: Montserrat, sans-serif;
 }
-
-/* div{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
+.courseYear{
+    
 }
 
-div ul li p .courseOutline{
-    grid-row: 2;
-} */
 
 .listBorder{
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-.courseOutline{
-    grid-area: ;
-}
 
 .listBorderBottom{
     
     border-bottom: black solid 2px;
 }
 
-main div ul{
- list-style-type: none;
-}
 
 
-@media screen and (min-width: 600px) {
+
+@media screen and (max-width: 600px) {
+    .listBorder{
+        display: flex;
+        flex-direction: column;
+    }
+    .courseYear{
+        order: 0;
+    }
     
 }
 
