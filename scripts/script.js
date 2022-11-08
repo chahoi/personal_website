@@ -12,3 +12,10 @@ let course3 = {
 }
 
 const courseLists = [course1,course2,course3]
+
+// let userInput = "";
+do{
+    userInput = prompt("Enter 4-digit number")
+
+}while(userInput.length != 4 || isNaN(Number(userInput)))
+
