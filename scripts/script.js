@@ -14,27 +14,25 @@ let course3 = {
 const courseLists = [course1,course2,course3]
 
 // let userInput = "";
+let flag = false
+
 do{
     userInput = prompt("Enter 4-digit number")
-
-}while(userInput.length != 4 || isNaN(Number(userInput)))
+}while(userInput.length !== 4 || isNaN(Number(userInput)));
 
 //write a loop to check my array
-for (let myCourse of courseLists){
+for (myCourse of courseLists){
     // myCourse.code = prompt("Enter your course code: ")
     if(myCourse.code.includes(userInput))
     {
         console.log(`Yes I am taking the course ${myCourse.code} - ${myCourse.name} `)
-        flag = true
+        flag == true
     }
-    if(!myCourse.code.includes(userInput))
-    {
-        console.log("I will add as new course")
-        courseLists.push({code:userInput, name: null})
-        // myCourse.code(prompt(userInput))
-        break
-    }
-    
+}
+if(flag == false){
+    console.log("I will add as new course");
+    courseLists.push({code:userInput, name: null});
 }
 
+console.log("Success")
 console.log(courseLists)
